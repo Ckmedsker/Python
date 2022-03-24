@@ -13,7 +13,7 @@ window.configure(background = "black")
 
 for _ in range(34):
     for j in range(90):
-        Label (window, text = "A", bg="black", fg=(f"{r}{g}{b}"), font = "none 12 bold") .grid(row=count, column=j)
+        Label (window, text = "A", bg="black", fg=(f"{r}{g}{b}"), font = "none 12 bold").grid(row=count, column=j)
     count += 1
 
 
