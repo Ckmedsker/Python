@@ -6,6 +6,7 @@ FOREG = "white"
 FONTC = "black"
 WINDOW = "To Do List"
 TITLE = "To Do List:"
+FILE = "Labels.txt"
 
 mainUI = Tk()
 mainUI.title(WINDOW)
@@ -21,8 +22,8 @@ def labelMaker():
     if exists('Labels.txt'):
         pass
     else:
-        open("Labels.txt", "w")
-    with open("Labels.txt", "r") as label:
+        open(FILE, "w")
+    with open(FILE, "r") as label:
         for i,line in enumerate(label):
             if i < 9:
                 s = (f"{i + 1}       \n")
@@ -46,7 +47,7 @@ def editToDoList(temp):
     elif temp == "add":
         text = entry.get()
         entry.delete(0, END)
-        with open("Labels.txt", "r+") as label:
+        with open(FILE, "r+") as label:
             lines = len(label.readlines())
             if lines <= 27:
                 label.write(f"{text}\n")
@@ -59,7 +60,7 @@ def editToDoList(temp):
         numb = int(entry.get())
         numb -= 1
         entry.delete(0, END)
-        with open("Labels.txt","r+") as file:
+        with open(FILE,"r+") as file:
             lines = file.readlines()
             file.seek(0)
             for line in lines:
