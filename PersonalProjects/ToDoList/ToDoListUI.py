@@ -1,70 +1,87 @@
-import tkinter as tk
-from tkinter.ttk import LabeledScale
-
+from tkinter import *
+from os.path import exists
 
 BACKG = "skyblue"
 FOREG = "white"
+FONTC = "black"
+WINDOW = "To Do List"
+TITLE = "To Do List:"
 
-mainUI = tk.Tk()
-mainUI.title("To Do List:")
+mainUI = Tk()
+mainUI.title(WINDOW)
 mainUI.configure(bg=BACKG)
 mainUI.geometry("840x600")
 mainUI.update_idletasks()
-oneLabel = tk.Label(mainUI)
-
+itemsLabel = Label(mainUI)
+numbLabel = Label(mainUI)
 
 def labelMaker():
-    labelArray = []
-    labels = []
-    num = []
+    itemsList = []
+    numbList = []
+    if exists('Labels.txt'):
+        pass
+    else:
+        open("Labels.txt", "w")
     with open("Labels.txt", "r") as label:
         for i,line in enumerate(label):
-            #oneLabel = tk.Label (mainUI, text=("filler"), bg="green", fg="black", font="none 12 bold")
-            global oneLabel
-            oneLabel.destroy()
-            labels.append(line.strip("\n"))
-            #labelArray.append(tk.Label (mainUI, text=labels[i], bg="green", fg="black", font="none 12 bold"))
-            #labelArray[i].place(relx=0.1, rely=(0.1 + 0.05 * (i+1)))
-                            #vertical placement|distance between values|multiplier
-            #num.append(tk.Label (mainUI, text=i+1, bg="green", fg="black", font="none 12 bold"))
-            #num[i].place(relx=0.05, rely=(0.1 + 0.05 * (i+1)))
-        oneLabel = tk.Label (mainUI, text=(f"{i}     {labels[i]}\n"), bg="green", fg="black", font="none 12 bold")
-        oneLabel.place(relx=0.05, rely=(0.1 + 0.05 * (i+1)))
+            if i < 9:
+                s = (f"{i + 1}       \n")
+            else:
+                s = (f"{i + 1}     \n")
+            itemsList.append(f"{line}")
+            numbList.append(f"{s}")
+        global itemsLabel, numbLabel
+        itemsLabel.destroy()
+        numbLabel.destroy()
+        numbLabel = Label(mainUI, text=(''.join(numbList)), bg=BACKG, fg=FONTC, font="none 16 bold")
+        numbLabel.place(relx=0.05, rely=0.15)
+        itemsLabel = Label(mainUI, text=(''.join(itemsList)), bg=BACKG, fg=FONTC, font="none 16 bold", justify="left")
+        itemsLabel.place(relx=0.1, rely=0.15)
         label.close()
 
 
 def editToDoList(temp):
-    if entry.get() == "" or len(entry.get()) >= 40:
+    if entry.get() == "" or len(entry.get()) >= 180:
         pass
     elif temp == "add":
         text = entry.get()
-        entry.delete(0, tk.END)
-        addItem = open("Labels.txt", "a")
-        addItem.write(f"{text}\n")
-        addItem.close()
+        entry.delete(0, END)
+        with open("Labels.txt", "r+") as label:
+            lines = len(label.readlines())
+            if lines <= 27:
+                label.write(f"{text}\n")
+            else:
+                pass
+        label.close()
         labelMaker()
         mainUI.update_idletasks()
     elif temp == "remove":
-        text = entry.get()
-        entry.delete(0, tk.END)
-        #print("balls")
-        #toDoLabel['state'] = tk.DISABLED
-        #oneLabel.destroy()
+        numb = int(entry.get())
+        numb -= 1
+        entry.delete(0, END)
+        with open("Labels.txt","r+") as file:
+            lines = file.readlines()
+            file.seek(0)
+            for line in lines:
+                if lines[numb] not in line:
+                    file.write(line)
+            file.truncate()
+            file.close
         labelMaker()
-        mainUI.update_idletasks()
 
 
-toDoLabel = tk.Label (mainUI,text="To Do List", bg="green", fg="black", font="none 24 bold")
-toDoLabel.place(relx=0.5, rely=0.05, anchor=tk.N)
+toDoLabel = Label (mainUI,text=TITLE, bg=BACKG, fg=FONTC, font="none 24 bold")
+toDoLabel.place(relx=0.5, rely=0.05, anchor=N)
 
-addItem = tk.Button (mainUI, text="Add Item", width=16, height=2, command=lambda:editToDoList("add"))
-addItem.place(relx=0.4, rely=0.95, anchor=tk.S)
+addItem = Button (mainUI, text="Add Item", width=16, height=2, command=lambda:editToDoList("add"))
+addItem.place(relx=0.4, rely=0.95, anchor=S)
 
-removeItem = tk.Button (mainUI, text="Remove Item", width=16, height=2, command=lambda:editToDoList("remove"))
-removeItem.place(relx=0.6, rely=0.95, anchor=tk.S)
+removeItem = Button (mainUI, text="Remove Item", width=16, height=2, command=lambda:editToDoList("remove"))
+removeItem.place(relx=0.6, rely=0.95, anchor=S)
 
-entry = tk.Entry(mainUI)
-entry.place(relx=0.5, rely=0.85, anchor=tk.S)
+entry = Entry(mainUI)
+entry.place(relx=0.5, rely=0.85, anchor=S)
+
 
 labelMaker()
 mainUI.mainloop()

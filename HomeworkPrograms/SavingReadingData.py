@@ -19,4 +19,3 @@ with open("goba.txt","w+") as file:
         else:
             print("Please enter good or bad!")
             continue
-
