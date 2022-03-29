@@ -1,0 +1,12 @@
+aword
+is
+of
+
+order
+out
+probably
+
+this(tests)
+
+
+words this is a test from words()

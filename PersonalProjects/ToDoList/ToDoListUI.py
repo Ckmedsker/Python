@@ -4,8 +4,8 @@ from os.path import exists
 BACKG = "skyblue"
 FOREG = "white"
 FONTC = "black"
-WINDOW = "To Do List"
-TITLE = "To Do List:"
+WINDOW = "Cam's Coding Ideas"
+TITLE = "Cam's Coding Ideas"
 FILE = "Labels.txt"
 
 mainUI = Tk()
@@ -19,7 +19,7 @@ numbLabel = Label(mainUI)
 def labelMaker():
     itemsList = []
     numbList = []
-    if exists('Labels.txt'):
+    if exists(FILE):
         pass
     else:
         open(FILE, "w")
@@ -86,3 +86,5 @@ entry.place(relx=0.5, rely=0.85, anchor=S)
 
 labelMaker()
 mainUI.mainloop()
+
+# how to make .exe (pyinstaller.exe --onefile if applicable(--icon=$icon) $filename)
