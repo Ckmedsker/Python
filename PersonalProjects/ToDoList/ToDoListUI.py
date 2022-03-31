@@ -60,14 +60,14 @@ def editToDoList(temp):
         numb = int(entry.get())
         numb -= 1
         entry.delete(0, END)
-        with open(FILE,"r+") as file:
-            lines = file.readlines()
-            file.seek(0)
+        with open(FILE,"r+") as searches:
+            lines = searches.readlines()
+            searches.seek(0)
             for line in lines:
-                if lines[numb] not in line:
-                    file.write(line)
-            file.truncate()
-            file.close
+                if lines[numb] in line:
+                    searches.write(line)
+            searches.truncate()
+            searches.close
         labelMaker()
 
 
