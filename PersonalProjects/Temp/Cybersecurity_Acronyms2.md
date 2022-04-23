@@ -1,4 +1,15 @@
+111111 - 
+12 - balls
+12121 - 
+1asdas - 
+1d - 
+21111 - 
+2222 - 
+2322 - 
+23324 - 
+234 - 
 2FA - Two-Factor Authentication
+33333 - 
 3DES - 3 Data Encryption Standard
 AAA - Authentication, Authorization, and Accounting
 AAAA - Authentication. Authorization, Accounting, and Auditing
