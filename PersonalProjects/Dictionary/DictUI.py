@@ -6,9 +6,9 @@ import requests
 
 # Static Variables
 BACKG = "black"
-BBACKG = "white"
+BBACKG = "brown"
 FOREG = "red"
-FONTC = "brown"
+FONTC = "white"
 FILE = "dictionary.txt"
 FILE1 = "search_history.txt"
 
@@ -184,7 +184,7 @@ def main_page():
                            fg=FONTC, width=32, height=4, font="none 8 bold", command=random_entry)
     random_button.place(relx=0.85, rely=0.41, anchor=S)
 
-    recent_label = Label(UI, text="these are the 10 most recent searches!",
+    recent_label = Label(UI, text="These are the 10 most recent searches!",
                          bg=BACKG, fg=FONTC, font="none 12 bold")
     recent_label.place(relx=0.155, rely=0.23, anchor=S)
 

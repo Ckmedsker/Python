@@ -7,7 +7,7 @@ import time
 count = 0
 mixer.init()
 music = ["C2.mp3", "Eb2.mp3", "Gb2.mp3", "A2.mp3", "C3.mp3"]
-video = cv2.VideoCapture(1)
+video = cv2.VideoCapture(0)
 starttime = time.time()
 
 
@@ -25,19 +25,19 @@ while True:
     image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     mask = cv2.inRange(image, lower, upper)
 
-    contours, hierarchy = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(
+        mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
     if len(contours) != 0:
         for contour in contours:
             if cv2.contourArea(contour) > 250:
                 x, y, w, h = cv2.boundingRect(contour)
-                cv2.rectangle(img, (x,y), (x + w, y + h), (0, 0, 255), 3)
-                for i in range(0,5):
+                cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 255), 3)
+                for i in range(0, 5):
                     if count == i:
                         print(f"{colors[count]} = {music[count]}")
                         mixer.music.load(music[count])
                         mixer.music.play()
-
 
     cv2.imshow('mask', mask)
     cv2.imshow('webcam', img)
@@ -47,5 +47,5 @@ while True:
         continue
     else:
         count += 1
-        
+
     cv2.waitKey(1)

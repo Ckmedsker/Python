@@ -7,7 +7,7 @@ import time
 count = 0
 mixer.init()
 music = ["C2.mp3", "Eb2.mp3", "Gb2.mp3", "A2.mp3", "C3.mp3"]
-video = cv2.VideoCapture(1)
+video = cv2.VideoCapture(0)
 starttime = time.time()
 
 
