@@ -1,6 +1,12 @@
 111111 - 
 12 - balls
+12 - balls
 12121 - 
+123 - balls
+1232 - balls
+12345 - 
+123456 - 
+13 - balls
 1asdas - 
 1d - 
 21111 - 
@@ -715,6 +721,7 @@ cRTP - Compressed Real-Time Protocol
 dB - Decibel
 dBi - Decibels over isotropic
 dBm - Decibel Milliwatts
+dnas - dyname
 etc - edit to configure
 iSCSI - Internet Small Computer Systems Interface
 mDNS - Multicast Domain Name Service
