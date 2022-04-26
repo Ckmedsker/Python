@@ -1,21 +1,4 @@
-111111 - 
-12 - balls
-12 - balls
-12121 - 
-123 - balls
-1232 - balls
-12345 - 
-123456 - 
-13 - balls
-1asdas - 
-1d - 
-21111 - 
-2222 - 
-2322 - 
-23324 - 
-234 - 
 2FA - Two-Factor Authentication
-33333 - 
 3DES - 3 Data Encryption Standard
 AAA - Authentication, Authorization, and Accounting
 AAAA - Authentication. Authorization, Accounting, and Auditing
@@ -43,6 +26,7 @@ ARO - Annualized Rate of Occurrence
 ARP - Address Resolution Protocol
 ARPAnet - Advanced Research Projects Agency Network
 AS - Authentication Service
+ASLR - Address Space Layout Randomization
 ASP - Active Server Pages
 ATM - Asynchronous Transfer Model/Mode
 ATP - Advanced Threat Protection
@@ -120,6 +104,7 @@ CMTS - Cable Modem Termination System
 CO - Central Office
 COOP - Continuity of Operation Planning
 COPE - Corporate Owned, Personally Enabled
+COW - Copy-On-Write
 CP - Certificate Policy/ Continuity Planning
 CPP - Control Plane Policing
 CPS - Certificate Practice Statement
@@ -169,6 +154,7 @@ DNAT - Destination Network Address Translation
 DNS - Domain Name Service/System
 DNSSEC - Domain Name System Security Extensions
 DOCSIS - Data over Cabling service interface specification
+DOM - Document Object Model
 DORA - Discover Offer Request Acknowledge
 DPI - Deep Packet Inspection
 DPO - Data Privacy Officer
@@ -203,7 +189,6 @@ EIRP - Effective Equivalent Isotropic Radiated Power
 EK - Exploit Kit/Endorsement Key
 ELF - Executable Linux File
 EN - Electrical Network
-ENTER AN ACRONYM! - enter a definition!
 EOL - End-of-Life
 EOSL - End-of-Service-Life
 EPP - Endpoint Protection Platforms
@@ -268,6 +253,7 @@ HTTP(S) - Hypertext Transfer Protocol (Secure)
 HVAC - Heating, Ventilation, and Air Conditioning
 I-Port - Isolated Port
 IAC - Infrastructure as Code
+IAM - Identity Access Management
 IANA - Internet Assigned Numbers Authority
 IBSS - Independent Basic Service Set
 ICA - Intermediate Certificate Authority
@@ -335,6 +321,7 @@ LFI - Link Fragmentation and Interleaving
 LLC - Logical Link Control
 LLMNR - Link-Local Multicast Name Resolution
 LM - Local Area Network Manager
+LSO - Locally Shared Object
 LTE - Long Term Evolution
 LTE-A - Long Term Evolution Advanced
 LUGs - Linux User Groups
@@ -401,6 +388,7 @@ NIST - National Institute of Standards and Technology
 NIU - Network Interface Unit
 NMS - Network Management System 
 NNI - Network-Node Interface
+NOP - Non-Operation Construction
 NOS - Network Operating System
 NS - Neighbor Solitication 
 NSA - National Security Agency
@@ -455,6 +443,7 @@ PDU - Protocol Data Unit/Power Distribution Unit
 PDoS - Permanent Denial of Service (Attack)
 PEAP - Protected Extensible Authentication Protocol
 PED - Portable Electronic Device
+PFS - Perfect Forward Secrecy
 PHI - Protected Health Information
 PIA - Privacy Impact Assessment
 PII - Personal Identifiable Information
@@ -504,6 +493,7 @@ RBAC - Role-Based Access Control
 RBASE - Rule-Based Access Control
 RC - Runtime Configuration
 RC4 - Rivest Cipher 4
+RCE - Remote Code Execution
 RD - Remote Desktop
 RDG - Remote Desktop Gateway
 RDP - Remote Desktop Protocol
@@ -559,6 +549,7 @@ SDT - Source Distribution Tree
 SDV - Software-Defined Visibility
 SECaaS - Security as a Service
 SED - Self-Encrypting Drives
+SEH - Structured Exception Handling
 SEM - Security Event Management
 SEND - Secure Neighbor Discovery Protocol
 SETA - Security Education Training and Awareness
@@ -637,6 +628,7 @@ TGS - Ticket-Granting Service
 TKIP - Temporal Key Integrity Protocol
 TLS - Transport Layer Security
 TLV - Type-Length Values
+TOCTTOU - Time Of Check To Time Of Use
 TOS - Trusted Operating System
 TOTP - Time-Based One-Time Password 
 TPI - Tag Protocol Identifier
@@ -647,6 +639,7 @@ TTP - Tactics, Techniques and Procedures
 TTY - Teletype Writer
 TUI - Terminal User Interface
 TXT - Trusted Execution Technology
+UAC - User Account Control
 UAV - Unmanned Aerial Vehicle
 UC - Unified Communications
 UDP - User Datagram Protocol
@@ -716,12 +709,10 @@ XTACACS - Extended Terminal Access Controller Access Control System
 XXE - XML External Entities
 XaaS - Anything as a Service
 ZAP - Zed Attack Proxy
-ZDI - Zero Day Initiative
-cRTP - Compressed Real-Time Protocol
+ZDI - Zero Day InitiativecRTP - Compressed Real-Time Protocol
 dB - Decibel
 dBi - Decibels over isotropic
 dBm - Decibel Milliwatts
-dnas - dyname
 etc - edit to configure
 iSCSI - Internet Small Computer Systems Interface
 mDNS - Multicast Domain Name Service
