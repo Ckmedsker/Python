@@ -2,8 +2,8 @@ from tkinter import *
 from os.path import exists
 
 # Static Variables
-FILE = ""
-FILE1 = ""
+FILE = "song.txt"
+FILE1 = "temp.txt"
 IMAGE = r"C:\Users\Camer\Pictures\music_note.png"
 BACKG = "black"
 BBACKG = "brown"
@@ -33,6 +33,7 @@ file_checker()
 
 # Setting up the main page
 def main():
+    main_label = Label(UI, text="Music Player/Creater")
 
 # Setting up the play page
 
@@ -41,3 +42,4 @@ def main():
 
 
 UI.mainloop()
+
