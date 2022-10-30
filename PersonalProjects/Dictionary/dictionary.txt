@@ -5,6 +5,7 @@ Cyber
 Cybersecurity
 Editor
 Frank
+Hehe
 Interface
 Iteration
 Kitten
@@ -15,4 +16,5 @@ Text
 Vim
 Vulnerability
 Word
+Words
 Zero-day
