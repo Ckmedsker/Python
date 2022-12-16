@@ -1,10 +1,8 @@
 Kitten
 Words
 Hehe
-Editor
 Word
 Frank
-Vim
 Coding
 Text
 Cybersecurity

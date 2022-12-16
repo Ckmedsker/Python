@@ -3,7 +3,6 @@ Coding
 College
 Cyber
 Cybersecurity
-Editor
 Frank
 Hehe
 Interface
@@ -13,7 +12,6 @@ Multithreading
 Pog
 Projects
 Text
-Vim
 Vulnerability
 Word
 Words
