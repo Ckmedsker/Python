@@ -1,0 +1,23 @@
+Cam's Song Creator User Manual
+
+If the user chooses to exit at any given point, there is an "Exit" button in the top left of both pages.
+
+
+If the listbox below the text at the top is empty, the only options the user has is to exit or create a new song!
+To create a new song, the user must click the "Create Song!" button in the bottom right.
+Once clicked, the user is greeted with a new page.
+Here the user can play around with the notes by manually clicking the buttons with letters on them.
+Above are labels notating which notes will be played with the button below.
+The user can choose to go back home with nothing being created if they so desire.
+The user can also choose to create a song. 
+First they must enter a name for their song into the textbox in the bottom middle.
+Next they can press the "Start/Stop Recording" button located on the middle left.
+When clicked, the recording begins, but it does not begin timing until the first note is played.
+Once in this "recording" mode, the program enables all the notes to be played with the corresponding key on the user's keyboard.
+If the user would like to pause their recording, they can pause notes being tracked by clicking the "Start/Stop Recording" button again.
+This will not stop the timings between key presses, so keep that in mind.
+If the user is dissatisfied with their recording mid-recording, they can delete it by clicking the "Delete Current Recording" button.
+Once the user is happy with their song, they can click the "Back Home and Save Song" button located in the bottom right.
+
+The user can play a song by clicking on the song in the listbox, and then clicking the "Play Selected Song" button in the bottom middle.
+To delete a song, they can do this by clicking on the song in the listbox and then clicking the "Delete Selected Song!" in the bottom left.
