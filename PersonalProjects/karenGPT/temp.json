@@ -1,0 +1,21 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "\n\nAs an AI language model, I cannot offer financial advice as becoming rich depends on various factors such as economic conditions, market positioning, and personal strategies. However, some ways people go about building wealth include:\n\n1. Investing wisely: Making smart investments in stocks, real estate, and other assets that grow in value is one way to accumulate wealth over time.\n\n2. Starting a business: Entrepreneurship can be a path to wealth, although it requires hard work and risk-taking.\n\n3. Saving and budgeting: Living below your means and saving a portion of your income is important for gradually accumulating wealth.\n\n4. Education and skill development: Pursuing education or developing key skillg network of contacts and collaborators can lead to valuable opportunities and connections.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1678248923,
+  "id": "chatcmpl-6rfUxyJQnK6sdYwXvkAdPk1EWice9",
+  "model": "gpt-3.5-turbo-0301",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 174,
+    "prompt_tokens": 12,
+    "total_tokens": 186
+  }
+}
